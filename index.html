@@ -267,6 +267,149 @@
 
     <!-- DONE TILL HERE -->
 
+    <section class="home-enquiry">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#homeEnquiry" aria-controls="homeEnquiry" role="tab" data-toggle="tab">Online
+                            Enquiry</a>
+                    </li>
+                    <li role="presentation"><a href="#homeLogin" aria-controls="homeLogin" role="tab" data-toggle="tab">Login</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="homeEnquiry">
+                        <form class="form-horizontal" action="https://gradxs.com/action/insertData.php" method="post">
+                            <div class="row">
+                                <div class="col-md-6 pr-0">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-list"></i></span>
+                                        <select name="program" class="form-control" required onChange="getCourse(this.value);">
+                                            <option value="">Program Type</option>
+                                            <option value="36">PhD Programs (Charisma University)
+                                            </option>
+                                            <option value="47">GradXs Diploma Programs</option>
+                                            <option value="40">PG Programs (LIUTEBM University)
+                                            </option>
+                                            <option value="41">Bachelor Programs (LIUTEBM
+                                                University)
+                                            </option>
+                                            <option value="42">PG by Research (LIUTEBM University)
+                                            </option>
+                                            <option value="43">PhD Programs (LIUTEBM University)
+                                            </option>
+                                            <option value="44">D.Litt Programs (LIUTEBM University)
+                                            </option>
+                                            <option value="45">M.Phil Programs (LIUTEBM University)
+                                            </option>
+                                            <option value="46">Charisma University BBA & MBA
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-list"></i></span>
+                                        <select name="course" id="course" class="form-control" required>
+                                            <option value="">Program Title</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="form-group" style="display:none;">
+                                <label class="col-md-3 col-sm-12 col-xs-12 control-label">Study Mode
+                                    :
+                                </label>
+                                <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-list"></i></span>
+                                        <select name="study_mode" class="form-control">
+                                            <option value="">select study mode</option>
+                                            <option>Home Study</option>
+                                            <option>Classroom Study</option>
+                                            <option>Weekend Support</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="display:none;">
+                                <label class="col-md-3 col-sm-12 col-xs-12 control-label">Country :
+                                </label>
+                                <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-list"></i></span>
+                                        <select name="country" class="form-control">
+                                            <option value="">select your country</option>
+                                            <option>India</option>
+                                            <option>Pakistan</option>
+                                            <option>Bangladesh</option>
+                                            <option>Shri Lanka</option>
+                                            <option>China</option>
+                                            <option>US</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-user"></i></span>
+                                        <input name="name" placeholder="Name :" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pr-0">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope"
+                                                aria-hidden="true"></i></span>
+                                        <input name="email" placeholder="Email :" class="form-control" type="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"> <i
+                                                class="fas fa-phone fa-rotate-90"></i>
+                                        </span>
+                                        <input name="phone" placeholder="Phone : With Code" class="form-control" title="Eg. +918XXXXXXXXX" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="query" placeholder="Type your Query" required></textarea>
+                            </div>
+                            <div>
+                                <input type="text" name="newentry" id="newentry">
+                                <input type="hidden" name="page" value="newentry">
+                                <button type="submit" name="save_enquiry" class="btn btn-success submit_btn">Send <span
+                                        class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="homeLogin">
+                        <form method="post">
+                            <div><input type="text" name="username" placeholder="Username :" class="form-control" required aria-label="username"></div>
+                            <div><input type="password" name="password" placeholder="Password :" class="form-control" required aria-label="password"></div>
+                            <div class="home-login"><button type="submit" name="login" class="btn btn-success">Login
+                                </button> &nbsp; </div>
+                            <div id="status" class="text-danger"></div><br>
+                            <span>Don't have an account? <a href="register.html">Register
+                                    Here</a></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <section class="news-scroller">
@@ -283,8 +426,8 @@
     </section>
 
     <div id="main-wrapper">
-        <div id="main-subwrapper" class="container-fluid" style="padding:0;">
-            <main class="instruction col-md-8" id="main" tabindex="-1">
+        <div id="main-subwrapper" class="container" style="padding:0; width: 70vw;">
+            <main class="instruction col-md-12" id="main" tabindex="-1">
                 <div class="col-md-12" style="padding-left: 11rem; padding-right: 11rem; display: table-cell;">
                     <h1>Your Own Executive MBA & <a href="distance-learning-phd-programs.html">Ph.D</a> Facilitator in India : GradXs
                     </h1>
@@ -328,141 +471,163 @@
                 </div>
             </main>
 
-            <section id="enquiry-wrapper" class="home-enquiry col-md-4">
-                <!-- ------------------- ENQUIRY FORM ------------------ -->
-                <!-- <section class="home-enquiry"> -->
-                <!-- <div class="row"> -->
-                <!-- <div class="col-md-12"> -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#homeEnquiry" aria-controls="homeEnquiry" role="tab" data-toggle="tab">Online
-                            Enquiry</a>
-                    </li>
-                    <li role="presentation"><a href="#homeLogin" aria-controls="homeLogin" role="tab" data-toggle="tab">Login</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="homeEnquiry">
-                        <form class="form-horizontal" action="https://gradxs.com/action/insertData.php" method="post">
-                            <div class="row">
-                                <div class="col-md-6 pr-0">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                        <select name="program" class="form-control" required onChange="getCourse(this.value);">
-                                            <option value="">Program Type</option>
-                                            <option value="36">PhD Programs (Charisma University)
-                                            </option>
-                                            <option value="47">GradXs Diploma Programs</option>
-                                            <option value="40">PG Programs (LIUTEBM University)
-                                            </option>
-                                            <option value="41">Bachelor Programs (LIUTEBM
-                                                University)
-                                            </option>
-                                            <option value="42">PG by Research (LIUTEBM University)
-                                            </option>
-                                            <option value="43">PhD Programs (LIUTEBM University)
-                                            </option>
-                                            <option value="44">D.Litt Programs (LIUTEBM University)
-                                            </option>
-                                            <option value="45">M.Phil Programs (LIUTEBM University)
-                                            </option>
-                                            <option value="46">Charisma University BBA & MBA
-                                            </option>
-                                        </select>
-                                    </div>
+            <!-- <section id="enquiry-wrapper" class="home-enquiry col-md-4">
+                <section class="home-enquiry">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#homeEnquiry"
+                                        aria-controls="homeEnquiry" role="tab" data-toggle="tab">Online
+                                        Enquiry</a>
+                                </li>
+                                <li role="presentation"><a href="#homeLogin" aria-controls="homeLogin" role="tab"
+                                        data-toggle="tab">Login</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="homeEnquiry">
+                                    <form class="form-horizontal" action="https://gradxs.com/action/insertData.php"
+                                        method="post">
+                                        <div class="row">
+                                            <div class="col-md-6 pr-0">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-list"></i></span>
+                                                    <select name="program" class="form-control" required
+                                                        onChange="getCourse(this.value);">
+                                                        <option value="">Program Type</option>
+                                                        <option value="36">PhD Programs (Charisma University)
+                                                        </option>
+                                                        <option value="47">GradXs Diploma Programs</option>
+                                                        <option value="40">PG Programs (LIUTEBM University)
+                                                        </option>
+                                                        <option value="41">Bachelor Programs (LIUTEBM
+                                                            University)
+                                                        </option>
+                                                        <option value="42">PG by Research (LIUTEBM University)
+                                                        </option>
+                                                        <option value="43">PhD Programs (LIUTEBM University)
+                                                        </option>
+                                                        <option value="44">D.Litt Programs (LIUTEBM University)
+                                                        </option>
+                                                        <option value="45">M.Phil Programs (LIUTEBM University)
+                                                        </option>
+                                                        <option value="46">Charisma University BBA & MBA
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-list"></i></span>
+                                                    <select name="course" id="course" class="form-control" required>
+                                                        <option value="">Program Title</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="form-group" style="display:none;">
+                                            <label class="col-md-3 col-sm-12 col-xs-12 control-label">Study Mode
+                                                :
+                                            </label>
+                                            <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-list"></i></span>
+                                                    <select name="study_mode" class="form-control">
+                                                        <option value="">select study mode</option>
+                                                        <option>Home Study</option>
+                                                        <option>Classroom Study</option>
+                                                        <option>Weekend Support</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="display:none;">
+                                            <label class="col-md-3 col-sm-12 col-xs-12 control-label">Country :
+                                            </label>
+                                            <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-list"></i></span>
+                                                    <select name="country" class="form-control">
+                                                        <option value="">select your country</option>
+                                                        <option>India</option>
+                                                        <option>Pakistan</option>
+                                                        <option>Bangladesh</option>
+                                                        <option>Shri Lanka</option>
+                                                        <option>China</option>
+                                                        <option>US</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-user"></i></span>
+                                                    <input name="name" placeholder="Name :" class="form-control"
+                                                        type="text" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pr-0">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i></span>
+                                                    <input name="email" placeholder="Email :" class="form-control"
+                                                        type="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"> <i
+                                                            class="fas fa-phone fa-rotate-90"></i>
+                                                    </span>
+                                                    <input name="phone" placeholder="Phone : With Code"
+                                                        class="form-control" title="Eg. +918XXXXXXXXX" type="text"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i
+                                                    class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea class="form-control" name="query" placeholder="Type your Query"
+                                                required></textarea>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="newentry" id="newentry">
+                                            <input type="hidden" name="page" value="newentry">
+                                            <button type="submit" name="save_enquiry"
+                                                class="btn btn-success submit_btn">Send <span
+                                                    class="glyphicon glyphicon-send"></span></button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                        <select name="course" id="course" class="form-control" required>
-                                            <option value="">Program Title</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="form-group" style="display:none;">
-                                <label class="col-md-3 col-sm-12 col-xs-12 control-label">Study Mode
-                                    :
-                                </label>
-                                <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                        <select name="study_mode" class="form-control">
-                                            <option value="">select study mode</option>
-                                            <option>Home Study</option>
-                                            <option>Classroom Study</option>
-                                            <option>Weekend Support</option>
-                                        </select>
-                                    </div>
+                                <div role="tabpanel" class="tab-pane fade" id="homeLogin">
+                                    <form method="post">
+                                        <div><input type="text" name="username" placeholder="Username :"
+                                                class="form-control" required aria-label="username"></div>
+                                        <div><input type="password" name="password" placeholder="Password :"
+                                                class="form-control" required aria-label="password"></div>
+                                        <div class="home-login"><button type="submit" name="login"
+                                                class="btn btn-success">Login
+                                            </button> &nbsp; </div>
+                                        <div id="status" class="text-danger"></div><br>
+                                        <span>Don't have an account? <a href="register.html">Register
+                                                Here</a></span>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="form-group" style="display:none;">
-                                <label class="col-md-3 col-sm-12 col-xs-12 control-label">Country :
-                                </label>
-                                <div class="col-md-9 col-sm-12 col-xs-12 selectContainer">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                        <select name="country" class="form-control">
-                                            <option value="">select your country</option>
-                                            <option>India</option>
-                                            <option>Pakistan</option>
-                                            <option>Bangladesh</option>
-                                            <option>Shri Lanka</option>
-                                            <option>China</option>
-                                            <option>US</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input name="name" placeholder="Name :" class="form-control" type="text" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 pr-0">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-envelope"
-                                                aria-hidden="true"></i></span>
-                                        <input name="email" placeholder="Email :" class="form-control" type="email" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"> <i class="fas fa-phone fa-rotate-90"></i>
-                                        </span>
-                                        <input name="phone" placeholder="Phone : With Code" class="form-control" title="Eg. +918XXXXXXXXX" type="text" required>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="query" placeholder="Type your Query" required></textarea>
-                            </div>
-                            <div>
-                                <input type="text" name="newentry" id="newentry">
-                                <input type="hidden" name="page" value="newentry">
-                                <button type="submit" name="save_enquiry" class="btn btn-success submit_btn">Send <span
-                                        class="glyphicon glyphicon-send"></span></button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="homeLogin">
-                        <form method="post">
-                            <div><input type="text" name="username" placeholder="Username :" class="form-control" required aria-label="username"></div>
-                            <div><input type="password" name="password" placeholder="Password :" class="form-control" required aria-label="password"></div>
-                            <div class="home-login"><button type="submit" name="login" class="btn btn-success">Login
-                                </button> &nbsp; </div>
-                            <div id="status" class="text-danger"></div><br>
-                            <span>Don't have an account? <a href="register.html">Register
-                                    Here</a></span>
-                        </form>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </section> -->
         </div>
     </div>
 

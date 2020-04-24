@@ -671,11 +671,11 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
 }
 
 .home-enquiry {
-    max-width: 500px;
-    margin: 80px auto;
-    /* float: right; */
-    /* margin-right: 50px; */
-    /* margin-top: -645px; */
+    max-width: 450px;
+    /* margin: 80px auto; */
+    float: right;
+    margin-right: 10px;
+    margin-top: -60vh;
     z-index: 999;
     /* position: relative; */
     border-radius: 5px;
@@ -715,23 +715,37 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
 
 .home-enquiry form input,
 .home-enquiry form select,
-.home-enquiry form option {
+.home-enquiry form option,
+.home-enquiry form textarea {
     border: 0;
-    height: 3em;
+    /* height: 2.5em; */
     color: rgb(20, 20, 20);
-    background-color: #f0f0f0
+    background-color: #f0f0f0b4
 }
 
 .home-enquiry form textarea {
-    height: 8em;
-    border: 0;
-    vertical-align: middle;
+    height: 4em;
 }
 
 .home-enquiry form .input-group-addon {
-    background-color: rgb(210, 210, 210);
+    background-color: rgba(210, 210, 210, 0.671);
     color: rgb(25, 25, 25);
+    border: 0px;
     font-weight: 900;
+}
+
+.home-enquiry form input::placeholder,
+.home-enquiry form textarea::placeholder,
+.home-enquiry form select::placeholder {
+    color: rgb(51, 51, 51);
+}
+
+:-ms-input-placeholder {
+    color: rgb(51, 51, 51);
+}
+
+::-ms-input-placeholder {
+    color: rgb(51, 51, 51);
 }
 
 .home-enquiry .nav-tabs {
@@ -745,7 +759,7 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    /* border: 1px solid #002444; */
+    border: 0px solid #002444;
     /* border-top: 1px solid transparent; */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75)
 }
@@ -759,6 +773,7 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
 }
 
 .home-enquiry .nav-tabs>li.active>a {
+    border: 0px;
     border-bottom: 0px solid transparent
 }
 
@@ -779,7 +794,7 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
     color: #fff;
     background-color: #03922e;
     border: 0;
-    height: 3em;
+    /* height: 3em; */
     /* border-color: #098c09; */
     font-weight: 900;
     letter-spacing: .5px
@@ -1385,7 +1400,11 @@ h3 a:hover {
         letter-spacing: 1px
     }
     .home-enquiry {
-        /* margin-top: -435px */
+        float: none;
+        margin: 40px auto;
+        /* max-width: 100%; */
+        /* margin-bottom: 15px; */
+        border-radius: 0
     }
     .call ul {
         margin: 0;
@@ -1532,9 +1551,9 @@ h3 a:hover {
     }
     .home-enquiry {
         float: none;
-        margin-top: 0;
+        margin: 40px auto;
         /* max-width: 100%; */
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
         border-radius: 0
     }
     .home-enquiry .tab-content {
