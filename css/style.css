@@ -17,11 +17,19 @@ a {
     white-space: initial
 }
 
-.GI h3 {
-    color: #004784
+.GI .modal-content {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 5rem;
+}
+
+.GI .modal-title {
+    color: #004784;
+    font-family: "encodesansbold";
 }
 
 .GI p {
+    font-family: "encode sans reg";
     text-align: justify;
     font-size: 16px;
     line-height: 30px;
@@ -39,7 +47,7 @@ a {
 
 .GI .close {
     opacity: 1;
-    color: red
+    color: rgb(255, 59, 59)
 }
 
 .my-header {
