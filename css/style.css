@@ -6,7 +6,8 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("../patterns/b7.png");
+    /* background-image: url("../patterns/b7.png"); */
+    background-color: #01192d;
 }
 
 a {
@@ -230,13 +231,22 @@ a {
 }
 
 .navbar {
-    background-color: #01192d!important;
+    background-color: #01192dd8;
     border-radius: 0;
     margin-bottom: 0;
     border: 0;
-    /* position: fixed;
+    /* position: fixed; */
+    /* width: 100vw; */
+    z-index: 10000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100vw;
-    z-index: 10; */
+    margin: 0px;
 }
 
 #cssmenu,
@@ -244,7 +254,7 @@ a {
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a {
-    margin: 0;
+    margin: auto;
     padding: 0;
     border: 0;
     list-style: none;
@@ -285,7 +295,8 @@ a {
 }
 
 #cssmenu>ul>li {
-    float: left
+    float: left;
+    /* margin: auto; */
 }
 
 #cssmenu .active>a,
@@ -674,7 +685,7 @@ only screen and (min-resolution:2dppx) and (max-width:1024px) {
     max-width: 450px;
     /* margin: 80px auto; */
     float: right;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: -60vh;
     z-index: 999;
     /* position: relative; */
