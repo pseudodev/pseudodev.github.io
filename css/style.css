@@ -250,7 +250,7 @@ a {
     border: 0;
     /* position: fixed; */
     /* width: 100vw; */
-    /* z-index: 10000; */
+    z-index: 10000;
     /* overflow-y: hidden; */
     /* overflow-x: hidden; */
 }
