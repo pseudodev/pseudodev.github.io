@@ -22,7 +22,7 @@ Revamped https://gradxs.com
 * Added transparency to various elements.
 * Added Animate On Scroll (AOS) effects to `home-enquiry` form, `homeMBA-phd` containers and Modal Icons in `main-wrapper`.
 
-## Things to be ensured while publishing to the main site:
+## Things to be ensured before publishing:
 * SEO is not affected.
 * Site is mobile compatible. *Though, many changes have been done to make this happen. Main issue is with navbar.*
 * Navbar collapses to Menu Button when window size is less than 1200px.
