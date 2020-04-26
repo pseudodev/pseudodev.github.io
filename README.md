@@ -21,3 +21,6 @@ Revamped https://gradxs.com
 * Changed layout of `main-wrapper`, Modal Popups in `main-wrapper`, `homeMBA-phd` and `footer`.
 * Added transparency to various elements.
 * Added Animate On Scroll (AOS) effects to `home-enquiry` form, `homeMBA-phd` containers and Modal Icons in `main-wrapper`.
+
+## Author:
+* [Shivansh Rakesh](https://github.com/shivanshrakesh)
