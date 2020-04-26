@@ -21,6 +21,7 @@ Revamped https://gradxs.com. Currently published at https://pseudodev.github.io.
 * Changed layout of `main-wrapper`, Modal Popups in `main-wrapper`, `homeMBA-phd` and `footer`.
 * Added transparency to various elements.
 * Added Animate On Scroll (AOS) effects to `homeMBA-phd` containers.
+* Changed the look of scroll bar.
 
 ## Things to be ensured before publishing:
 * SEO should not affected.
