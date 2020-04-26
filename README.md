@@ -23,10 +23,10 @@ Revamped https://gradxs.com. Currently published at https://pseudodev.github.io.
 * Added Animate On Scroll (AOS) effects to `homeMBA-phd` containers.
 
 ## Things to be ensured before publishing:
-* SEO is not affected.
-* Site is mobile compatible. *Though, many changes have been done to make this happen. Main issue is with navbar.*
-* Navbar collapses to Menu Button when window size is less than 1200px.
-* The above mentioned changes are encorporated.
+* SEO should not affected.
+* Site should be mobile compatible. *Though, many changes have been done to make this happen. Main issue is with navbar.*
+* Navbar should collapse to Menu Button when window size is less than 1200px.
+* The above mentioned changes should be encorporated.
 
 ## Author:
 * [Shivansh Rakesh](https://github.com/shivanshrakesh)
