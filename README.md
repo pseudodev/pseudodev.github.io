@@ -1,5 +1,5 @@
 # New website layout for gradXs.com
-Revamped https://gradxs.com. Currently published at https://pseudodev.github.io.
+Revamped https://gradxs.com. [Currently unpublished]
 
 ## Changes made:
 * Almost all fonts changed. *Fonts are different at different places.*
