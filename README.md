@@ -1,5 +1,5 @@
 # New website layout for gradXs.com
-Revamped https://gradxs.com. [Currently unpublished]
+*[Currently unpublished]*
 
 ## Changes made:
 * Almost all fonts changed. *Fonts are different at different places.*
