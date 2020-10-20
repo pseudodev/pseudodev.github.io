@@ -29,5 +29,9 @@
 * Navbar should collapse to Menu Button when window size is less than 1200px.
 * The above mentioned changes should be encorporated.
 
+## Issues that have been fixed:
+* Site is mobile compatible almost.
+* Navbar does collapse when size is less than 1200px.
+
 ## Author:
 * [Shivansh Rakesh](https://github.com/shivanshrakesh)
