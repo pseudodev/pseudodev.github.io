@@ -166,11 +166,11 @@ a {
 }
 
 .GradxsHeader>.row {
-    /* margin-right: 1px */
+    margin-right: 1px
 }
 
 .LiutebmHeader>.row {
-    /* margin-right: 2px */
+    margin-right: 2px
 }
 
 #liutebm-pre-header {
@@ -186,36 +186,6 @@ a {
 
 .home-popup img {
     box-shadow: 0 0 25px #000
-}
-
-.AccreOnPhd,
-.DLearning,
-.aboutGradxs,
-.excutiveMBA {
-    padding: 50px 0
-}
-
-.AccreOnPhd h1,
-.DLearning h1,
-.Error404 h1,
-.aboutGradxs h1,
-.excutiveMBA h1 {
-    line-height: 30px
-}
-
-.AccreOnPhd img,
-.DLearning img,
-.aboutGradxs img,
-.excutiveMBA img {
-    max-width: 100%;
-    margin-bottom: 20px
-}
-
-.AccreOnPhd h2,
-.DLearning h2,
-.aboutGradxs h2,
-.excutiveMBA h2 {
-    font-size: 24px
 }
 
 .AccreOnPhd p,
@@ -249,11 +219,11 @@ a {
     border-radius: 0;
     margin-bottom: 0;
     border: 0;
-    /* position: fixed; */
-    /* width: 100vw; */
+    position: fixed;
+    width: 100vw;
     z-index: 10000;
-    /* overflow-y: hidden; */
-    /* overflow-x: hidden; */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .sticky {
@@ -304,7 +274,7 @@ a {
 
 #cssmenu>ul {
     margin: 8px auto;
-    max-width: 1140px!important;
+    max-width: 1140px;
     float: none
 }
 
@@ -315,7 +285,7 @@ a {
 
 #cssmenu .active>a,
 #cssmenu>ul>li>a:hover {
-    color: #00bdfb!important
+    color: #00bdfb
 }
 
 #cssmenu.align-center>ul {
